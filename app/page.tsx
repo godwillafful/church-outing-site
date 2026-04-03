@@ -22,7 +22,7 @@ export default function Home() {
       <section
         className="relative h-[600px] flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: "url('/new-poster.jpg')",
+          backgroundImage: "url('/new-poster.png')",
         }}
       >
         <div className="absolute inset-0 bg-black/50" />
