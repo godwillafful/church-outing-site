@@ -3,7 +3,7 @@ export default function Home() {
     <main className="min-h-screen bg-sky-50 text-slate-900">
       <section className="relative">
         <img
-          src="/summer-poster.png"
+          src="/new-poster.png"
           alt="Sureway Summer Outing Poster"
           className="w-full h-[420px] md:h-[560px] object-cover"
         />
