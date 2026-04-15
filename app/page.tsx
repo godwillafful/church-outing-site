@@ -149,9 +149,9 @@ export default function Home() {
             </button>
           </form>
 
-          {/* WhatsApp Button */}
+          {/* WhatsApp Button with pre-filled message */}
           <a
-            href="https://wa.me/447405211069"
+            href="https://wa.me/447405211069?text=Hi%20I%20would%20like%20to%20register%20for%20the%20Sureway%20Summer%20Outing.%20Name:%20%20Number%20of%20people:%20"
             target="_blank"
             rel="noreferrer"
             className="block text-center mt-4 bg-green-600 text-white py-4 rounded-xl font-bold"
