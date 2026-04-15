@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-sky-50 text-slate-900">
-      
+
       {/* Banner */}
       <section className="relative">
         <img
@@ -151,7 +151,7 @@ export default function Home() {
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/447404892928"
+            href="https://wa.me/447405211069"
             target="_blank"
             rel="noreferrer"
             className="block text-center mt-4 bg-green-600 text-white py-4 rounded-xl font-bold"
