@@ -20,6 +20,12 @@ export default function Home() {
 
       if (distance <= 0) {
         clearInterval(interval);
+        setTimeLeft({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        });
         return;
       }
 
@@ -36,8 +42,6 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-sky-50 text-slate-900">
-
-      {/* Banner */}
       <section className="relative">
         <img
           src="/new-poster.png"
@@ -56,14 +60,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Intro */}
       <section className="text-center py-16 px-6 bg-sky-600 text-white">
-        <h1 className="text-5xl font-bold">
-          Sureway Assemblies of God ☀️
-        </h1>
-        <p className="mt-4 text-xl">
-          Summer Outing — Portsmouth Beach
-        </p>
+        <h1 className="text-5xl font-bold">Sureway Assemblies of God ☀️</h1>
+        <p className="mt-4 text-xl">Summer Outing — Portsmouth Beach</p>
         <p className="mt-6 max-w-4xl mx-auto text-lg leading-8">
           Join us for an exciting inter-church gathering with Sureway Assemblies
           of God from Coventry, Northampton, Walsall, and Birmingham. Come
@@ -74,7 +73,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Countdown */}
       <section className="max-w-5xl mx-auto px-6 py-12">
         <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
           <h2 className="text-3xl font-bold">Countdown to the Event</h2>
@@ -100,7 +98,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Activities & Pricing */}
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-6">
         <div className="bg-white p-6 rounded-2xl shadow">
           <h2 className="text-2xl font-bold">🎉 Activities Include</h2>
@@ -123,7 +120,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Registration */}
       <section className="max-w-3xl mx-auto px-6 pb-16">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <h2 className="text-3xl font-bold text-center">Register Now</h2>
@@ -149,9 +145,8 @@ export default function Home() {
             </button>
           </form>
 
-          {/* WhatsApp Button with pre-filled message */}
           <a
-            href="https://wa.me/447405211069?text=Hi%20I%20would%20like%20to%20register%20for%20the%20Sureway%20Summer%20Outing.%20Name:%20%20Number%20of%20people:%20"
+            href="https://wa.me/447405211069?text=Hi%20i%20would%20like%20to%20register%20for%20the%20summer%20outing"
             target="_blank"
             rel="noreferrer"
             className="block text-center mt-4 bg-green-600 text-white py-4 rounded-xl font-bold"
@@ -159,7 +154,6 @@ export default function Home() {
             Register on WhatsApp
           </a>
 
-          {/* Contacts */}
           <div className="text-center mt-8 text-sm text-slate-500 space-y-1">
             <p>Contact: 07404892928</p>
             <p>Contact: 07438354699</p>
@@ -168,7 +162,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
     </main>
   );
 }
