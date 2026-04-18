@@ -113,7 +113,7 @@ export default function Home() {
         <div className="bg-white p-6 rounded-2xl shadow">
           <h2 className="text-2xl font-bold">💷 Pricing</h2>
           <p className="mt-4 text-lg">£10 per person</p>
-          <p className="text-lg font-semibold">£20 per family</p>
+          <p className="text-lg font-semibold">£30 per family</p>
           <p className="mt-6 text-base text-slate-600">
             All are welcome. Bring your family, friends, and neighbours.
           </p>
