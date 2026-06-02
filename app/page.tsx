@@ -20,12 +20,7 @@ export default function Home() {
 
       if (distance <= 0) {
         clearInterval(interval);
-        setTimeLeft({
-          days: 0,
-          hours: 0,
-          minutes: 0,
-          seconds: 0,
-        });
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
         return;
       }
 
@@ -124,23 +119,39 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <h2 className="text-3xl font-bold text-center">Register Now</h2>
 
-          <form className="space-y-4 mt-6">
+          <form
+            action="https://formspree.io/f/mreokqyd"
+            method="POST"
+            className="space-y-4 mt-6"
+          >
             <input
               type="text"
+              name="fullName"
+              required
               placeholder="Full Name"
               className="w-full border p-4 rounded-xl"
             />
+
             <input
               type="number"
+              name="numberOfPeople"
+              required
               placeholder="Number of People"
               className="w-full border p-4 rounded-xl"
             />
+
             <input
               type="tel"
+              name="phoneNumber"
+              required
               placeholder="Phone Number"
               className="w-full border p-4 rounded-xl"
             />
-            <button className="w-full bg-sky-600 text-white py-4 rounded-xl font-bold">
+
+            <button
+              type="submit"
+              className="w-full bg-sky-600 text-white py-4 rounded-xl font-bold"
+            >
               Register
             </button>
           </form>
